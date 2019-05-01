@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>dw</servlet-name>
+        <servlet-class>com.placetopay.controller.dw</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateRequest</servlet-name>
+        <servlet-class>com.placetopay.controller.CreateRequestServelet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Nuevo</servlet-name>
+        <servlet-class>com.placetopay.view.Nuevo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Modal</servlet-name>
+        <servlet-class>com.placetopay.view.Modal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dw</servlet-name>
+        <url-pattern>/dw</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateRequest</servlet-name>
+        <url-pattern>/createRequest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Nuevo</servlet-name>
+        <url-pattern>/nuevo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Modal</servlet-name>
+        <url-pattern>/modal</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
